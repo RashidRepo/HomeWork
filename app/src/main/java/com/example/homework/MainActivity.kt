@@ -4,6 +4,7 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.content.DialogInterface
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -55,6 +56,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.notif.setOnClickListener {
             showNotification()
+        }
+
+        binding.webview.setOnClickListener {
+                val intent = Intent(this, WebviewActivity::class.java)
+                startActivity(intent)
         }
 
 

@@ -29,5 +29,12 @@
         android:id="@+id/notif"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Notification" />
+        android:text="Show Notification"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show WebView" />
 </LinearLayout>
